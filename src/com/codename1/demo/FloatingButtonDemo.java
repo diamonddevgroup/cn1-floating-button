@@ -31,11 +31,29 @@ public class FloatingButtonDemo {
             current.show();
             return;
         }
+        //showTestSingleCommandsForm();
         showTestMultiCommandsForm();
     }
 
-    private void showTestMultiCommandsForm() {
+    private void showTestSingleCommandsForm() {
         Form hi = new Form("Test Single Command");
+
+        FloatingButton fb = new FloatingButton(new Command("") {
+
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                Dialog.show("Test", "I am a test dialog innitiated from floating button", "Ok", null);
+            }
+        }, FloatingButton.FONTICON_PLUS);
+
+        fb.addToForm(hi, FloatingButton.BOTTOM_RIGHT);
+
+        hi.show();
+    }
+
+    private void showTestMultiCommandsForm() {
+        Form hi = new Form("Test Multi Command");
+
         Map<Command, Character> param = new HashMap<>();
         param.put(new Command("Write") {
 
