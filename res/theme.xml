@@ -427,22 +427,22 @@
         <val key="FloatingButton.transparency" value="255" />
         <val key="FloatingCommand.fgColor" value="3399ff" />
         <font key="FloatingCommand.font" type="ttf" face="0" style="0" size="0" name="native:MainRegular" family="native:MainRegular" sizeSettings="1" actualSize="12.0" />
-        <val key="FloatingCommand.marUnit" value="1,1,1,1" />
-        <val key="FloatingCommand.margin" value="1,1,1,1" />
-        <val key="FloatingCommand.padUnit" value="2,2,2,2" />
+        <val key="FloatingCommand.marUnit" value="2,1,2,1" />
+        <val key="FloatingCommand.margin" value="2,2,1,1" />
+        <val key="FloatingCommand.padUnit" value="2,1,2,1" />
         <val key="FloatingCommand.padding" value="1,1,1,1" />
-        <val key="FloatingCommand.press#fgColor" value="69d3" />
+        <val key="FloatingCommand.press#fgColor" value="3399ff" />
         <font key="FloatingCommand.press#font" type="ttf" face="0" style="0" size="0" name="native:MainRegular" family="native:MainRegular" sizeSettings="1" actualSize="12.0" />
-        <val key="FloatingCommand.press#marUnit" value="1,1,1,1" />
-        <val key="FloatingCommand.press#margin" value="1,1,1,1" />
-        <val key="FloatingCommand.press#padUnit" value="2,2,2,2" />
+        <val key="FloatingCommand.press#marUnit" value="2,1,2,1" />
+        <val key="FloatingCommand.press#margin" value="2,2,1,1" />
+        <val key="FloatingCommand.press#padUnit" value="2,1,2,1" />
         <val key="FloatingCommand.press#padding" value="1,1,1,1" />
         <val key="FloatingCommand.press#transparency" value="0" />
         <val key="FloatingCommand.sel#fgColor" value="3399ff" />
         <font key="FloatingCommand.sel#font" type="ttf" face="0" style="0" size="0" name="native:MainRegular" family="native:MainRegular" sizeSettings="1" actualSize="12.0" />
-        <val key="FloatingCommand.sel#marUnit" value="1,1,1,1" />
-        <val key="FloatingCommand.sel#margin" value="1,1,1,1" />
-        <val key="FloatingCommand.sel#padUnit" value="2,2,2,2" />
+        <val key="FloatingCommand.sel#marUnit" value="2,1,2,1" />
+        <val key="FloatingCommand.sel#margin" value="2,2,1,1" />
+        <val key="FloatingCommand.sel#padUnit" value="2,1,2,1" />
         <val key="FloatingCommand.sel#padding" value="1,1,1,1" />
         <val key="FloatingCommand.sel#transparency" value="0" />
         <val key="FloatingCommand.transparency" value="0" />

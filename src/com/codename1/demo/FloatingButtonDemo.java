@@ -8,6 +8,7 @@ import com.codename1.ui.events.ActionEvent;
 import com.codename1.ui.plaf.UIManager;
 import com.codename1.ui.util.Resources;
 import com.floatingbutton.codename1.FloatingButton;
+import com.floatingbutton.codename1.FontIcon;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
@@ -44,7 +45,7 @@ public class FloatingButtonDemo {
             public void actionPerformed(ActionEvent evt) {
                 Dialog.show("Test", "I am a test dialog innitiated from floating button", "Ok", null);
             }
-        }, FloatingButton.FONTICON_PLUS);
+        }, FontIcon.FONTICON_PLUS);
 
         fb.addToForm(hi, FloatingButton.BOTTOM_RIGHT);
 
@@ -61,21 +62,21 @@ public class FloatingButtonDemo {
             public void actionPerformed(ActionEvent evt) {
                 Dialog.show("Test", "I am a test dialog innitiated from floating command", "Ok", null);
             }
-        }, FloatingButton.FONTICON_PENCIL);
+        }, FontIcon.FONTICON_PENCIL);
         param.put(new Command("Camera") {
 
             @Override
             public void actionPerformed(ActionEvent evt) {
                 Dialog.show("Test", "I am a test dialog innitiated from floating command", "Ok", null);
             }
-        }, FloatingButton.FONTICON_CAMERA_2);
+        }, FontIcon.FONTICON_CAMERA_2);
         param.put(new Command("Friends") {
 
             @Override
             public void actionPerformed(ActionEvent evt) {
                 Dialog.show("Test", "I am a test dialog innitiated from floating command", "Ok", null);
             }
-        }, FloatingButton.FONTICON_USERS_2);
+        }, FontIcon.FONTICON_USERS_2);
 
         FloatingButton fb = new FloatingButton(new Command("") {
 
@@ -83,7 +84,7 @@ public class FloatingButtonDemo {
             public void actionPerformed(ActionEvent evt) {
                 Dialog.show("Test", "I am a test dialog innitiated from floating button", "Ok", null);
             }
-        }, FloatingButton.FONTICON_PLUS, param);
+        }, FontIcon.FONTICON_PLUS, param);
 
         fb.addToForm(hi, FloatingButton.BOTTOM_RIGHT);
 
