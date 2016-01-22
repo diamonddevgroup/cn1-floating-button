@@ -5,7 +5,8 @@ import com.codename1.ui.Font;
 import com.codename1.ui.FontImage;
 
 /**
- *
+ * FontIcon class that generates non-pixelating svg image icons 
+ * 
  * @author Diamond
  */
 public class FontIcon {
@@ -517,29 +518,18 @@ public class FontIcon {
     private static int actualSize = 20;
 
     /**
-     * Convert specified size based on device screen
+     * Get the actual size of the icon
      *
-     * @param size the size of the floating button icon, default to 4
-     * @return
-     */
-    public int Size(int size) {
-        System.out.println(Display.getInstance().convertToPixels(size, false));
-        return Display.getInstance().convertToPixels(size, false);
-    }
-
-    /**
-     * Convert specified size based on device screen
-     *
-     * @return
+     * @return the actual size of the icon
      */
     public static int getActualSize() {
         return actualSize;
     }
 
     /**
-     * Convert specified size based on device screen
+     * Set the actual size of the icon
      *
-     * @param actualSize
+     * @param actualSize the size to set the icon to
      */
     public static void setActualSize(int actualSize) {
         FontIcon.actualSize = actualSize;
@@ -549,14 +539,14 @@ public class FontIcon {
      * Convert specified size based on device screen
      *
      * @param size the size of the floating button icon, default to 4
-     * @return 
+     * @return the converted size
      */
     public static int convertSize(int size) {
         return Display.getInstance().convertToPixels(size, false);
     }
 
     /**
-     * Create a font icon from specified character code, size, and color
+     * Create a font icon from specified character code, and color
      *
      * @param charCode the character code to create the icon from, e.g. '\u270E'
      * @param color the color of the icon, defaults to 0xffffff
