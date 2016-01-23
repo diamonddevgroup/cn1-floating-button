@@ -216,10 +216,10 @@ public class FloatingButton extends Button {
                 if (alpha < 0) {
                     alpha = 0xff;
                 }
-                g.drawImage(getImageFromString("floating_shadow.png"), x - 2, y - 2, 2 * r + 4, 2 * r + 4);
+                g.drawImage(getImageFromString("floating_shadow.png"), x - 2, y - 2, 2 * r + size, 2 * r + size);
                 g.setAlpha(alpha);
                 g.setColor(getStyle().getBgColor());
-                g.fillArc(x, y, 2 * r - 4, 2 * r - 4, 0, 360);
+                g.fillArc(x, y, 2 * r - size, 2 * r - size, 0, 360);
                 //g.setAlpha(0xff);
                 g.setAntiAliased(antiAliased);
             }
@@ -270,10 +270,10 @@ public class FloatingButton extends Button {
                     if (alpha < 0) {
                         alpha = 0xff;
                     }
-                    g.drawImage(getImageFromString("floating_shadow.png"), x - 2, y - 2, 2 * r + 4, 2 * r + 4);
+                    g.drawImage(getImageFromString("floating_shadow.png"), x - 2, y - 2, 2 * r + size, 2 * r + size);
                     g.setAlpha(alpha);
                     g.setColor(getStyle().getBgColor());
-                    g.fillArc(x, y, 2 * r - 4, 2 * r - 4, 0, 360);
+                    g.fillArc(x, y, 2 * r - size, 2 * r - size, 0, 360);
                     //g.setAlpha(0xff);
                     g.setAntiAliased(antiAliased);
                 }

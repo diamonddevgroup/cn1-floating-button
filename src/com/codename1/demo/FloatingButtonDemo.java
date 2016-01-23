@@ -83,7 +83,7 @@ public class FloatingButtonDemo {
             public void actionPerformed(ActionEvent evt) {
                 Dialog.show("Test", "I am a test dialog innitiated from floating button", "Ok", null);
             }
-        }, FontIcon.FONTICON_PLUS, 5);
+        }, FontIcon.FONTICON_PLUS);
         floatingButton.addToForm(hi, FloatingButton.BOTTOM_RIGHT);
 
         hi.show();
@@ -142,7 +142,7 @@ public class FloatingButtonDemo {
             public void actionPerformed(ActionEvent evt) {
                 Dialog.show("Test", "I am a test dialog innitiated from floating button", "Ok", null);
             }
-        }, FontIcon.FONTICON_PLUS, param);
+        }, FontIcon.FONTICON_PLUS, param, 5);
 
         floatingButton.addToForm(hi, FloatingButton.BOTTOM_RIGHT);
 
