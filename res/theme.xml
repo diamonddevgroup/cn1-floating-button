@@ -425,20 +425,20 @@
         <val key="FloatingButton.sel#padding" value="0,0,2,2" />
         <val key="FloatingButton.sel#transparency" value="255" />
         <val key="FloatingButton.transparency" value="255" />
-        <val key="FloatingCommand.fgColor" value="3399ff" />
+        <val key="FloatingCommand.fgColor" value="ffffff" />
         <font key="FloatingCommand.font" type="ttf" face="0" style="0" size="0" name="native:MainRegular" family="native:MainRegular" sizeSettings="1" actualSize="12.0" />
         <val key="FloatingCommand.marUnit" value="2,1,2,1" />
         <val key="FloatingCommand.margin" value="2,2,1,1" />
         <val key="FloatingCommand.padUnit" value="2,1,2,1" />
         <val key="FloatingCommand.padding" value="1,1,1,1" />
-        <val key="FloatingCommand.press#fgColor" value="3399ff" />
+        <val key="FloatingCommand.press#fgColor" value="ffffff" />
         <font key="FloatingCommand.press#font" type="ttf" face="0" style="0" size="0" name="native:MainRegular" family="native:MainRegular" sizeSettings="1" actualSize="12.0" />
         <val key="FloatingCommand.press#marUnit" value="2,1,2,1" />
         <val key="FloatingCommand.press#margin" value="2,2,1,1" />
         <val key="FloatingCommand.press#padUnit" value="2,1,2,1" />
         <val key="FloatingCommand.press#padding" value="1,1,1,1" />
         <val key="FloatingCommand.press#transparency" value="0" />
-        <val key="FloatingCommand.sel#fgColor" value="3399ff" />
+        <val key="FloatingCommand.sel#fgColor" value="ffffff" />
         <font key="FloatingCommand.sel#font" type="ttf" face="0" style="0" size="0" name="native:MainRegular" family="native:MainRegular" sizeSettings="1" actualSize="12.0" />
         <val key="FloatingCommand.sel#marUnit" value="2,1,2,1" />
         <val key="FloatingCommand.sel#margin" value="2,2,1,1" />

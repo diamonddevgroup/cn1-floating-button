@@ -54,7 +54,8 @@ public class FloatingButtonDemo {
     }
 
     private void showTestSingleCommandsForm(Form backForm) {
-        Form hi = new Form();
+        Form hi = new Form(new BoxLayout(BoxLayout.Y_AXIS));
+        hi.setScrollableY(true);
 
         Toolbar t = new Toolbar();
         hi.setToolbar(t);
@@ -72,6 +73,10 @@ public class FloatingButtonDemo {
         hi.setBackCommand(back);
         t.addCommandToLeftBar(back);
 
+        for (int i = 0; i < 100; i++) {
+            hi.add("Test label " + i);
+        }
+        
         FloatingButton floatingButton = new FloatingButton(new Command("") {
 
             @Override
@@ -80,12 +85,13 @@ public class FloatingButtonDemo {
             }
         }, FontIcon.FONTICON_PLUS, 5);
         floatingButton.addToForm(hi, FloatingButton.BOTTOM_RIGHT);
-        
+
         hi.show();
     }
 
     private void showTestMultiCommandsForm(Form backForm) {
-        Form hi = new Form();
+        Form hi = new Form(new BoxLayout(BoxLayout.Y_AXIS));
+        hi.setScrollableY(true);
 
         Toolbar t = new Toolbar();
         hi.setToolbar(t);
@@ -103,6 +109,10 @@ public class FloatingButtonDemo {
         hi.setBackCommand(back);
         t.addCommandToLeftBar(back);
 
+        for (int i = 0; i < 100; i++) {
+            hi.add("Test label " + i);
+        }
+        
         Map<Command, Character> param = new HashMap<>();
         param.put(new Command("Write") {
 
@@ -135,7 +145,7 @@ public class FloatingButtonDemo {
         }, FontIcon.FONTICON_PLUS, param);
 
         floatingButton.addToForm(hi, FloatingButton.BOTTOM_RIGHT);
-        
+
         hi.show();
     }
 
