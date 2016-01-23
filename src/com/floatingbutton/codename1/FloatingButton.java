@@ -44,9 +44,14 @@ public class FloatingButton extends Button {
     public static final int BOTTOM_CENTER = 3;
 
     /**
-     * Size of the floating button icon, default to 4
+     * Size of the floating button icon
      */
-    private int size = 4;
+    private static final int DEFAULT_SIZE = 4;
+
+    /**
+     * Size of the floating button icon
+     */
+    private int size;
 
     /**
      * Color of the floating button icon, default to 0xffffff
@@ -65,7 +70,7 @@ public class FloatingButton extends Button {
      * perform
      */
     public FloatingButton(Command defaultCommand) {
-        this(defaultCommand, FontIcon.FONTICON_PENCIL, null);
+        this(defaultCommand, FontIcon.FONTICON_PENCIL, null, DEFAULT_SIZE);
     }
 
     /**
@@ -75,9 +80,36 @@ public class FloatingButton extends Button {
      * perform
      * @param icon the floating button icon character code, e.g. '\u270E',
      * defaults to FontIcon.FONTICON_PENCIL
+     * @param size the floating button icon size
+     */
+    public FloatingButton(Command defaultCommand, Character icon, int size) {
+        this(defaultCommand, icon, null, size);
+    }
+
+    /**
+     * Construct a floating button with the specified icon, default size to 4
+     *
+     * @param defaultCommand the default action the floating button should
+     * perform
+     * @param icon the floating button icon character code, e.g. '\u270E',
+     * defaults to FontIcon.FONTICON_PENCIL
      */
     public FloatingButton(Command defaultCommand, Character icon) {
-        this(defaultCommand, icon, null);
+        this(defaultCommand, icon, null, DEFAULT_SIZE);
+    }
+
+    /**
+     * Construct a floating button with the specified icon, default size to 4
+     *
+     * @param defaultCommand the default action the floating button should
+     * perform
+     * @param icon the floating button icon character code, e.g. '\u270E',
+     * defaults to FontIcon.FONTICON_PENCIL
+     * @param floatingCommands optional commands to show when floating button is
+     * pressed
+     */
+    public FloatingButton(Command defaultCommand, Character icon, Map<Command, Character> floatingCommands) {
+        this(defaultCommand, icon, floatingCommands, DEFAULT_SIZE);
     }
 
     /**
@@ -87,13 +119,16 @@ public class FloatingButton extends Button {
      * perform
      * @param icon the floating button icon character code, e.g. '\u270E',
      * defaults to FontIcon.FONTICON_PENCIL
-     * @param floatingCommands optional commands to be shown when floating
-     * button is pressed
+     * @param floatingCommands optional commands to show when floating button is
+     * pressed
+     * @param size
      */
-    public FloatingButton(Command defaultCommand, Character icon, Map<Command, Character> floatingCommands) {
+    public FloatingButton(Command defaultCommand, Character icon, Map<Command, Character> floatingCommands, int size) {
+        setSize(size);
         setUIID("FloatingButton");
         getAllStyles().setAlignment(CENTER);
         setIcon(FontIcon.createFontIcon(icon, color, size));
+        System.out.println(size);
         drawButton();
         if (defaultCommand == null) {
             throw new IllegalArgumentException("Default command is null");
@@ -247,7 +282,7 @@ public class FloatingButton extends Button {
             int pad = Math.round(size * 2 / 3);
             btnIcon.getAllStyles().setBgPainter(p);
             btnIcon.getAllStyles().setPadding(pad, pad, pad, pad);
-            
+
             btnIcon.getAllStyles().setMargin(0, 0, 0, 0);
 
             Container bl = new Container(new BorderLayout(BorderLayout.CENTER_BEHAVIOR_CENTER_ABSOLUTE));
