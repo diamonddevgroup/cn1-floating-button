@@ -61,7 +61,7 @@ public class FloatingButtonDemo {
         t.setTitleCentered(true);
         t.setTitle("Test Single Command");
 
-        Command back = new Command("", FontIcon.createFontIcon('\ue765', 0xffffff, 3)) {
+        Command back = new Command("", FontIcon.createFontIcon('\ue765', 0xffffff, 4)) {
 
             @Override
             public void actionPerformed(ActionEvent evt) {
@@ -79,7 +79,8 @@ public class FloatingButtonDemo {
                 Dialog.show("Test", "I am a test dialog innitiated from floating button", "Ok", null);
             }
         }, FontIcon.FONTICON_PLUS);
-
+        
+        floatingButton.setSize(5);
         floatingButton.addToForm(hi, FloatingButton.BOTTOM_RIGHT);
 
         hi.show();
@@ -93,7 +94,7 @@ public class FloatingButtonDemo {
         t.setTitleCentered(true);
         t.setTitle("Test Multi Command");
 
-        Command back = new Command("", FontIcon.createFontIcon('\ue765', 0xffffff, 3)) {
+        Command back = new Command("", FontIcon.createFontIcon('\ue765', 0xffffff, 4)) {
 
             @Override
             public void actionPerformed(ActionEvent evt) {
